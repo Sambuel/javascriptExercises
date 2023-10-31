@@ -20,53 +20,56 @@ __________________        ____________________________________________
 ------------------------------LEVEL 1----------------------------------
 */
 
-function sonIguales(elemento1, elemento2) {
+function sonIguales(cholate,chcolate) {
   // Devuelve "true" si "elemento1" y "elemento2" son estrictamente iguales
   // De lo contrario, devuelve "false"
   //↓↓↓ Tu código: ↓↓↓ */
+   return chocolate === cholate 
+  }
 
 
-}
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (str1.length == str2.length) {
+    return "true"
+  }else{
+    return "false"
+  }
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  return num %2 === 0 ;
 }
-
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
-
+  return num % 3 !== 0;
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-
+  return num * num 
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-
+  return num * num * num
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-
+  return num ** exponent;
 }
 
 function esPositivo(numero) {
@@ -75,7 +78,27 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Este numero es negativo"
   //Si el número es 0, devuelve false
   
+//   let positivo = 2 
+//   let negativo = -20
+//   if (numero == positivo) {
+//     return "este numero es positivo"
+//   }else if (numero == negativo){
+//     return "este numero es positivo"
+//   }else{
+// return false
+//   }
+
+  if (numero > 0) {
+    return "Este numero es positivo";
+  } else if (numero < 0) {
+    return "Este numero es negativo";
+  } else {
+    return false;
+  }
+
 }
+
+
 
 /* 
 ---------------------------LEVEL 2-------------------------------------
@@ -95,7 +118,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Lionel", "Messi" -> "Lionel Messi"
   // Tu código:
-  
+  return nombre + " " + apellido
 }
 
 function obtenerSaludo(nombre) {
@@ -103,21 +126,21 @@ function obtenerSaludo(nombre) {
   // "Exequiel" -> "Hola Exequiel!"
   //PISTA: debes concatenar palabras, espacios y el signo !
   // Tu código:
-  
+  return `Hola ${nombre}!`
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  
+  return `${str}!`
 }
 
 function deEuroAdolar(euro) {
   /*  Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
-  como parámetro un número de euros y calcule el cambio en dólares. "suponiendo que vale 1.20"
+  como parámetro un número de euros y calcule el cambio en dólares.     "suponiendo que vale 1.20"
   Escribe tu código aquí */
-  
+  return euro*1.20
 }
 
 function esVocal(letra) {
@@ -133,14 +156,22 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero == 5 || numero == 10 ) {
+    return true 
+  } else {
+    return false 
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if(numero > 50 && numero < 20 ){
+    return true
+  }else{
+    return false
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -150,7 +181,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-
+  
 }
 
 function tablaDelSeis() {
@@ -171,7 +202,7 @@ function tieneTresDigitos(numero) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-
+  array = [1,2,3,4,5,6,7,9,]
 }
 
 function incrementarPorUno(array) {
